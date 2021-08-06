@@ -347,7 +347,7 @@ footer {
     background: #222629;
 }
 footer .container  {
-    padding: 50px 50px 0px 50px;
+    padding: 50px 50px 20px 50px;
     color: #61892f;
 }
 footer .container h4 {
@@ -373,6 +373,9 @@ footer .footer-content {
 footer .contact {
     width: 50%;
     color: white;
+}
+footer .container > p  {
+    margin-left: 50px;
 }
 
 /* Bắt đầu phần Responsive */
