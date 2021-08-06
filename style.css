@@ -380,10 +380,39 @@ footer .container > p  {
 
 /* Bắt đầu phần Responsive */
 
-@media  screen and (max-width:1024px) {
+@media  screen and (max-width:768px) {
+    header {position: relative; height: 350px;}
     .menu .reg {
         top: 1%;
+        position:absolute;
     }
+    .menu {position: absolute;width: 100%; left: 0;}
     .menu .search {display: none;}
     .menu input {display: none;}
+    .menu > ul > li {float: none; width: 100%; text-align: center;}
+    .menu ul {width: 100%;position: relative; top: 70px; float: none;}
+    .menu li:hover > ul {
+        display: none;
+    }
+    .banner-head:hover .line {width: 0%;}
+    .banner-head:hover .line2 {width: 0%;}
+    .main .f-row {grid-template-columns: 250px;grid-gap: 20px;}
+    .services  .container {grid-template-columns: 200px 200px;
+        grid-template-rows: 150px 150px 150px;
+        grid-row-gap:120px;
+        grid-column-gap: 10px;
+        font-size: 12px;
+    }
+    .services .container h1 {
+        grid-column: span 2;
+        
+        height: 50px;
+    }
+    .project  .pj-row {
+        grid-template-columns: 400px;
+        grid-template-rows: 300px 300px 300px 300px;
+    }
+    .chuthich {bottom: 50%; opacity: 1; font-weight: 600;}
+    .partners .partner-items {grid-template-columns: 100% 100%; float: none;}
+    .partners .media {left: 0;}
 }
